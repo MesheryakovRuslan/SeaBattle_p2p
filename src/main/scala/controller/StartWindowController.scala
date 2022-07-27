@@ -1,4 +1,4 @@
-package FXMLcontrollers
+package controller
 
 import javafx.event.ActionEvent
 import javafx.fxml.{FXML, Initializable}

@@ -5,10 +5,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane fx:id="MainPanel" prefHeight="540.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLcontrollers.StartWindowController">
+<AnchorPane fx:id="MainPanel" prefHeight="540.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StartWindowController">
    <children>
-      <Button fx:id="BTNCreateRoom" layoutX="119.0" layoutY="40.0" mnemonicParsing="false" onAction="#BTNCreateRoom" prefHeight="60.0" prefWidth="145.0" />
-      <Button fx:id="BTNConnectRoom" layoutX="568.0" layoutY="40.0" mnemonicParsing="false" onAction="#BTNConnectRoom" prefHeight="60.0" prefWidth="145.0" />
+      <Button fx:id="BTNCreateRoom" layoutX="119.0" layoutY="40.0" mnemonicParsing="false" onAction="#BTNCreateRoomAction" prefHeight="60.0" prefWidth="145.0" />
+      <Button fx:id="BTNConnectRoom" layoutX="568.0" layoutY="40.0" mnemonicParsing="false" onAction="#BTNConnectRoomAction" prefHeight="60.0" prefWidth="145.0" />
       <TextField fx:id="TextField1" layoutX="566.0" layoutY="119.0" />
       <TextField fx:id="TextField2" layoutX="566.0" layoutY="173.0" />
       <TextField fx:id="TextField3" layoutX="566.0" layoutY="219.0" />
