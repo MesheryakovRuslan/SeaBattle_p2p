@@ -1,0 +1,60 @@
+plugins {
+    id 'java'
+    id 'scala'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.12'
+}
+
+group 'com.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    junitVersion = '5.8.2'
+}
+
+def versions = [
+        ScalaBinary: "2.13"
+]
+
+//sourceCompatibility = '11'
+//targetCompatibility = '11'
+//
+//tasks.withType(JavaCompile) {
+//    options.encoding = 'UTF-8'
+//}
+
+application {
+    mainClassName('Main')
+}
+
+javafx {
+    version = '18.0.1'
+    modules = ['javafx.controls', 'javafx.fxml']
+}
+
+dependencies {
+
+    testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+
+    //подключение Scala
+    implementation 'org.scala-lang:scala-library:2.13.8'
+    testImplementation 'org.scalatest:scalatest_2.11:3.2.12'
+    testImplementation 'junit:junit:4.13.2'
+    //подключение slf4j логера
+    implementation "com.outr:scribe-slf4j_${versions.ScalaBinary}:3.10.1"
+    //подключение akka typed
+    implementation platform("com.typesafe.akka:akka-bom_${versions.ScalaBinary}:2.6.19")
+    implementation "com.typesafe.akka:akka-cluster-tools_${versions.ScalaBinary}"
+    implementation "com.typesafe.akka:akka-cluster-typed_${versions.ScalaBinary}"
+    implementation "com.typesafe.akka:akka-actor-typed_${versions.ScalaBinary}"
+    testImplementation "com.typesafe.akka:akka-actor-testkit-typed_${versions.ScalaBinary}"
+}
+
+test {
+    useJUnitPlatform()
+}

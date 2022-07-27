@@ -1,0 +1,61 @@
+#MainPanel{
+-fx-background-image: url(img/bgMainScreen.png)
+}
+#SystemMenuPanel{
+-fx-background-color: #12006F
+}
+
+#BTNConnectRoom{
+-fx-border-color: transparent;
+-fx-background-color: transparent;
+-fx-background-image: url(img/BTNConnect_1.png)
+}
+
+#BTNConnectRoom:hover{
+-fx-border-color: transparent;
+-fx-background-color: transparent;
+-fx-background-image: url(img/BTNConnect_2.png)
+}
+
+#BTNConnectRoom:pressed{
+-fx-border-color: transparent;
+-fx-background-color: transparent;
+-fx-background-image: url(img/BTNConnect_3.png)
+}
+
+#BTNCreateRoom{
+-fx-border-color: transparent;
+-fx-background-color: transparent;
+-fx-background-image: url(img/BTNCreate_1.png)
+}
+
+#BTNCreateRoom:hover{
+-fx-border-color: transparent;
+-fx-background-color: transparent;
+-fx-background-image: url(img/BTNCreate_2.png)
+}
+
+#BTNCreateRoom:pressed{
+-fx-border-color: transparent;
+-fx-background-color: transparent;
+-fx-background-image: url(img/BTNCreate_3.png)
+}
+
+#Rule {
+-fx-background-image: url(img/rule.png)
+}
+
+#IconIP {
+-fx-background-image: url(img/iconIP.png)
+}
+
+#IconPort {
+-fx-background-image: url(img/iconPort.png)
+}
+
+#IconNameConnection, #IconNameCreate{
+-fx-background-image: url(img/iconName.png)
+}
+
+
+

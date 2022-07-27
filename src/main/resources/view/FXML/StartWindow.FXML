@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane fx:id="MainPanel" prefHeight="540.0" prefWidth="810.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLcontrollers.StartWindowController">
+   <children>
+      <Button fx:id="BTNCreateRoom" layoutX="119.0" layoutY="40.0" mnemonicParsing="false" onAction="#BTNCreateRoom" prefHeight="60.0" prefWidth="145.0" />
+      <Button fx:id="BTNConnectRoom" layoutX="568.0" layoutY="40.0" mnemonicParsing="false" onAction="#BTNConnectRoom" prefHeight="60.0" prefWidth="145.0" />
+      <TextField fx:id="TextField1" layoutX="566.0" layoutY="119.0" />
+      <TextField fx:id="TextField2" layoutX="566.0" layoutY="173.0" />
+      <TextField fx:id="TextField3" layoutX="566.0" layoutY="219.0" />
+      <TextField fx:id="TextField4" layoutX="117.0" layoutY="119.0" />
+      <Pane fx:id="Rule" layoutX="8.0" layoutY="231.0" prefHeight="318.0" prefWidth="795.0" />
+      <Pane fx:id="IconNameCreate" layoutX="507.0" layoutY="207.0" prefHeight="48.0" prefWidth="48.0" />
+      <Pane fx:id="IconIP" layoutX="513.0" layoutY="162.0" prefHeight="48.0" prefWidth="48.0" />
+      <Pane fx:id="IconPort" layoutX="513.0" layoutY="108.0" prefHeight="48.0" prefWidth="48.0" />
+      <Pane fx:id="IconNameConnection" layoutX="60.0" layoutY="108.0" prefHeight="48.0" prefWidth="48.0" />
+   </children>
+</AnchorPane>
